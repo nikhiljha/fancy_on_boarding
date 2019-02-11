@@ -5,6 +5,7 @@ author: Sahil Kumar <xdsahil@gmail.com>
 homepage: https://github.com/xsahil03x/fancy_on_boarding
 
 dependencies:
+  flutter_svg: ^0.10.3
   flutter:
     sdk: flutter
 

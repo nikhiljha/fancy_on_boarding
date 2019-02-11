@@ -1,5 +1,6 @@
 import 'dart:ui';
 import 'package:fancy_on_boarding/page_model.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter/material.dart';
 
 class PagerIndicator extends StatelessWidget {
@@ -121,7 +122,7 @@ class PageBubble extends StatelessWidget {
           ),
           child: Opacity(
             opacity: viewModel.activePercent,
-            child: Image.asset(
+            child: SvgPicture.asset(
               viewModel.iconAssetPath,
               color: viewModel.color,
             ),

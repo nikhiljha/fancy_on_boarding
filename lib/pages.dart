@@ -1,5 +1,6 @@
 import 'package:fancy_on_boarding/page_model.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class Page extends StatelessWidget {
   final PageModel viewModel;
@@ -23,7 +24,7 @@ class Page extends StatelessWidget {
                   0.0, 50.0 * (1.0 - percentVisible), 0.0),
               child: Padding(
                 padding: EdgeInsets.only(bottom: 25.0),
-                child: Image.asset(viewModel.heroAssetPath,
+                child: SvgPicture.asset(viewModel.heroAssetPath,
                     width: 200.0, height: 200.0),
               ),
             ),
